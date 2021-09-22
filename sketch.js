@@ -43,5 +43,5 @@ function draw() {
   fill("#FFFF");
   textAlign("center");
   textSize(40);
-  text("ARQUERÍA ÉPICA", width / 2, 100);
+  text("TIRO CON ARCO ÉPICO", width / 2, 100);
 }

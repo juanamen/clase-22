@@ -5,7 +5,7 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var canvas;
-var palyer, playerBase, playerArcher;
+var player, playerBase, playerArcher;
 var baseimage;
 
 function preload() {
@@ -21,9 +21,9 @@ function setup() {
   world = engine.world;
   angleMode(DEGREES);
 
-  //create player base body
+  //crear el cuerpo base del jugador
 
-  //create player body
+  //crear el cuerpo del jugador
 
 
 
@@ -32,16 +32,16 @@ function setup() {
 function draw() {
   background(backgroundImg);
 
-  //show the player image using image() function
+  //mostrar la imagen del jugador utilizando la función image()
 
-  //show the playerbase image using image() function
+  //mostrar la imagen de la base del jugador utilizando la función image()
 
 
   Engine.update(engine);
 
-  // Title
+  // Título
   fill("#FFFF");
   textAlign("center");
   textSize(40);
-  text("EPIC ARCHERY", width / 2, 100);
+  text("ARQUERÍA ÉPICA", width / 2, 100);
 }

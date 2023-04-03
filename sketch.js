@@ -22,7 +22,14 @@ function setup() {
   angleMode(DEGREES);
 
   //crear el cuerpo base del jugador
-
+    var options={
+      isStatic:true,
+    };
+    playerBase = Bodies.rectangle(200,350,180,150, options);
+    World.add(world, playerBase);
+    
+    player = Bodies.rectangle(250, playerBase.position.y - 160,50,180,options);
+    World.add(world,player);
   //crear el cuerpo del jugador
 
 
@@ -33,12 +40,13 @@ function draw() {
   background(backgroundImg);
 
   //mostrar la imagen del jugador utilizando la función image()
-
+    
   //mostrar la imagen de la base del jugador utilizando la función image()
 
 
   Engine.update(engine);
-
+  image(baseimage,playerBase.position.x,playerBase.position.y,180,150);
+  image(playerimage,player.position.x,player.position.y,50,180);
   // Título
   fill("#FFFF");
   textAlign("center");
